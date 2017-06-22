@@ -54,6 +54,24 @@ span.big {
 	font-weight: bold;
 }
 
+#userInput {
+	align-self: center;
+	margin-bottom: 20px;
+
+	display: flex;
+	flex-flow: column wrap;
+}
+
+#userInput label {
+	display: block;
+}
+
+#userInput input {
+	margin-top: 10px;
+	width: 60px;
+	align-self: center;
+}
+
 .container-body button {
 	padding: 8px 15px;
 	border-radius: 15px;

@@ -73,6 +73,8 @@ span.big {
 	border: none;
 	border-radius: 10px;
 	box-shadow: 0 0 2px 1px rgba(0, 0, 0, .6);
+	-webkit-border-radius: 10px;
+	-webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, .6);
 	outline: none;
 	align-self: center;
 }

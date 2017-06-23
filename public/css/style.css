@@ -68,7 +68,12 @@ span.big {
 
 #userInput input {
 	margin-top: 10px;
+	padding-left: 5px;
 	width: 60px;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0 0 2px 1px rgba(0, 0, 0, .6);
+	outline: none;
 	align-self: center;
 }
 

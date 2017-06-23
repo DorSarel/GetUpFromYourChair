@@ -21,8 +21,13 @@ if (Notification.permission !== "granted"){
 
 function delay_5() {
 	var delay_notification = new Notification("Come on!", {
-		body: "Did you get up already?!?!?!"
+		body: "Did you get up already?!?!?!",
+		icon: "/img/Icons8-Ios7-Sports-Walking.ico"
 	});
+
+	delay_notification.onclick = () => {
+		delay_notification.close();
+	}
 }
 
 function notifyMe() {
@@ -37,7 +42,8 @@ function notifyMe() {
 		// console.log(Notification.permission);
 	} else {
 		var notification = new Notification("Get Up!", {
-			body: "Hey! its time to get up!\nClick the notification to activate second notification in 5 minutes."
+			body: "Hey! its time to get up!\nClick the notification to activate second notification in 5 minutes.",
+			icon: "/img/Icons8-Ios7-Sports-Walking.ico"
 		});
 
 		console.log(Date.now());

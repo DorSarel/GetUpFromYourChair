@@ -46,7 +46,7 @@ function notifyMe() {
 			icon: "/img/Icons8-Ios7-Sports-Walking.ico"
 		});
 
-		console.log(Date.now());
+		// console.log(Date.now());
 
 		notification.onclick = () => {
 			notification.close();
@@ -63,9 +63,9 @@ $btn.on("click", () => {
 	if (btnText.indexOf("Trigger") !== -1) {
 
 		if (userVal !== "") {
-			console.log(userVal);
+			// console.log(userVal);
 			userVal = Number(userVal);
-			console.log(userVal);
+			// console.log(userVal);
 
 			// Uses the user input to calculate the time
 			timeForInterval = 1000 * (userVal * 60);

@@ -96,3 +96,35 @@ span.big {
 .container-body button:hover {
 	background: #80b3ff;
 }
+
+@media (max-width: 480px) {
+	h1 {
+		font-size: 1.25em;
+	}
+
+	h3 {
+		font-size: 1em;
+	}
+
+	.container-body h3 {
+		font-size: 1.125em;
+	}
+
+	#flex-row {
+		flex-direction: column;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 800px) {
+	h1 {
+		font-size: 2em;
+	}
+
+	h3 {
+		font-size: 1.35em;
+	}
+
+	.container-body h3 {
+		font-size: 1.5em;
+	}
+}

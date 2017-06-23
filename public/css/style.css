@@ -115,6 +115,12 @@ span.big {
 	}
 }
 
+@media (min-width: 481px) and (max-width: 680px) {
+	#flex-row {
+		flex-direction: column;
+	}
+}
+
 @media (min-width: 481px) and (max-width: 800px) {
 	h1 {
 		font-size: 2em;

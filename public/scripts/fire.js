@@ -8,9 +8,9 @@ will notify using javaScript notification to the user that it is time to get up.
 //Button var
 const $btn = $("#fire");
 const $userTime = $("#user_time");
+const $timer = $("#timer");
 
 const timerForDelay = 1000 * (5 * 60);
-// const $timer = $("#timer");
 let timeForInterval = 1000 * (120 * 60); // 1000 miliseconds = 1 second * 120 minutes
 let intervalId;
 
@@ -65,6 +65,10 @@ $btn.on("click", () => {
 		if (userVal !== "") {
 			// console.log(userVal);
 			userVal = Number(userVal);
+
+			if (userVal > 180) {
+				userVal = 180;
+			}
 			// console.log(userVal);
 
 			// Uses the user input to calculate the time
